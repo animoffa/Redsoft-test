@@ -4,13 +4,13 @@
       <div class="container">
         <div class="header-container">
           <div class="menu">
-            <img src="./assets/img/logo.svg">
+            <img src="./assets/img/logo.svg" class="logo-img">
             <nav class="nav">
-              <div class="menu__item">Каталог</div>
-              <div class="menu__item">Доставка</div>
-              <div class="menu__item">Оплата</div>
-              <div class="menu__item">Контакты</div>
-              <div class="menu__item">О галерее</div>
+              <a class="menu__item" href="#">Каталог</a>
+              <a class="menu__item" href="#">Доставка</a>
+              <a class="menu__item" href="#">Оплата</a>
+              <a class="menu__item" href="#">Контакты</a>
+              <a class="menu__item" href="#">О галерее</a>
             </nav>
           </div>
           <form class="search-container">
@@ -33,23 +33,23 @@
       <div class="container">
         <div class="footer-container">
           <div class="menu">
-            <img src="./assets/img/logo.svg">
+            <img src="./assets/img/logo.svg" class="logo-img">
             <nav class="nav">
-              <div class="menu__item">Каталог</div>
-              <div class="menu__item">Доставка</div>
-              <div class="menu__item">Оплата</div>
-              <div class="menu__item">Контакты</div>
-              <div class="menu__item">О галерее</div>
+              <a class="menu__item">Каталог</a>
+              <a class="menu__item">Доставка</a>
+              <a class="menu__item">Оплата</a>
+              <a class="menu__item">Контакты</a>
+              <a class="menu__item">О галерее</a>
             </nav>
           </div>
           <div class="contacts">
             <div class="phone">
-              <img src="./assets/img/phone.svg" alt="phone"/>
-              <h6>+7 (495) 555-55-55</h6>
+              <img src="./assets/img/phone.svg" alt="phone" class="phone-img"/>
+              <a class="phone-number" href="tel:84955555555">+7 (495) 555-55-55</a>
             </div>
             <div class="address">
-              <img src="./assets/img/location.svg" alt="address"/>
-              <h6>г. Москва, ул. Расплетина, 24</h6>
+              <img src="./assets/img/location.svg" alt="address" class="address-img"/>
+              <a class="address-text" href="https://yandex.ru/maps/-/CCUIrJuqkA">г. Москва, ул. Расплетина, 24</a>
             </div>
           </div>
         </div>
@@ -163,7 +163,14 @@
     justify-content: space-between;
     align-items: center;
   }
-
+  .phone-img,.address-img{
+    width:1.4rem;
+    height:1.4rem;
+  }
+.logo-img{
+  width:4.8rem;
+  height:4.8rem;
+}
   #app {
     font-family: 'Merriweather', serif;
     -webkit-font-smoothing: antialiased;
@@ -194,6 +201,7 @@
       .menu__item {
         font-size: 1.4rem;
         line-height: 2.1rem;
+        color: #2c3e50;
         font-weight: 500;
       }
     }
@@ -299,6 +307,12 @@
     font-size: 1.4rem;
     line-height: 2.1rem;
     font-weight: 300;
+  }
+  .phone-number,.address-text {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 300;
+    color:#2c3e50;
   }
 
   .button {

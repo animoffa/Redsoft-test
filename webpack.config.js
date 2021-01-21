@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -8,8 +7,6 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js',
   },
-
-
   module: {
     rules: [
       {
@@ -85,6 +82,8 @@ module.exports = {
       }
     ]
   },
+
+
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
